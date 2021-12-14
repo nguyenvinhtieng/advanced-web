@@ -66,7 +66,8 @@ function showErrorToast(message, title = "Error", duration = 3000) {
         duration: duration
     })
 }
-let MY_URL = 'http://localhost:3000/'
+// let MY_URL = 'http://localhost:3000/'
+let MY_URL = 'https://advanced-web-tdtu-2021-2022.herokuapp.com'
 let imgDepartments = ["pcthssv", 'pdh', 'psdh', 'pdtvmt', 'pktvkdcl', 'ptc', 'tdtclc', 'ttth', 'sdtc', 'atem', "tthtdnvcsv", 'kl', 'ttnnthbdvh', 'vcsktvkd', 'kmtcn', 'kddt', 'kcntt', 'kqtkd', 'kmtvbhld', 'kldcd', 'ktcnh', 'kgdqt'];
 
 let departments = ["Phòng CTHSSV", "Phòng Đại Học", "Phòng Sau Đại Học", "Phòng Điện Toán Và Máy Tính", "Phòng Khảo Thí Và Kiểm Định Chất Lượng", "Phòng Tài Chính", "TDT Creative Language Center", "Trung Tâm Tin Học", "Trung Tâm Đào Tạo phát triển xã hội(SDTC)", "Trung Tâm Phát Triển Khoa Học Quản Lý và Ứng Dụng Công Nghệ (ATEM)", "Trung Tâm Hợp Tác Doanh Nghiệp Và Cựu Sinh Viên", "Khoa Luật", "Trung Tâm Ngoại Ngữ Tin Học Bồi Dưỡng Văn Hóa", " Viện chính sách kinh tế và kinh doanh", "Khoa Mỹ thuật công nghiệp", "Khoa Điện – Điện tử", "Khoa Công nghệ thông tin", "Khoa Quản trị kinh doanh", "Khoa Môi trường và bảo hộ lao động", "Khoa Lao động công đoàn", "Khoa Tài chính ngân hàng", "Khoa giáo dục quốc tế"];
