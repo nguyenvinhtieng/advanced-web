@@ -1,0 +1,18 @@
+<li class="home-notifications-item">
+    {{#if_eq_prf this.userId @root.account._id }}
+    <a href="/department/notify/{{this._id}}">
+        {{else}}
+        <a href="/notify/{{this._id}}">
+            {{/if_eq_prf}}
+            <div class="notification-department">
+                {{this.username}}
+                <div class="notification-time">21/2/2021</div>
+            </div>
+            <div class="notification-title">
+                {{this.title}}
+            </div>
+            <div class="notification-content">
+                {{this.content}}
+            </div>
+        </a>
+</li>

@@ -1,0 +1,31 @@
+{{> header/department}}
+{{> modals/createNotification}}
+<div id="notifications-page"></div>
+<div id="socket-page"></div>
+<div id="role-user"></div>
+<div class="wrapper">
+    <div class="notifications">
+        <div class="notifications-header">
+            <h2>List of notification</h2>
+        </div>
+        <label for="modal-create-notification" class="account-add">
+            New <ion-icon name="add-circle"></ion-icon>
+        </label> <br>
+        <div class="notifications-content">
+            <div class="notifications-listpage">
+                <ul>
+                    {{{checkPage count page "" "department"}}}
+                    {{!-- <li class="notifications-page notifications-active">
+                        <a href="">1</a>
+                    </li> --}}
+                </ul>
+            </div>
+            <ul class="notifications-list">
+                {{#each my_notifications}}
+                {{> notification}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    .
+</div>

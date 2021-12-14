@@ -1,0 +1,39 @@
+{{> header/admin}}
+{{> modals/createAccount}}
+<div id="account-page"></div>
+<div id="socket-page"></div>
+<div id="role-user"></div>
+<div class="wrapper">
+    <div class="account">
+        <div class="account-header">
+            <h2>
+                Manage Account
+            </h2>
+            <label for="modal-create-account" class="account-add">
+                New <ion-icon name="person-add"></ion-icon>
+            </label>
+        </div>
+        <div class="account-content">
+            <table>
+
+                <tr>
+                    <th>Username</th>
+                    <th>Departments</th>
+                </tr>
+                {{#each departments}}
+                <tr>
+                    <td>{{this.username}}</td>
+                    <td class="department-column">
+                        <ul class="departments">
+                            {{#each this.category}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                    </td>
+                </tr>
+                {{/each}}
+
+            </table>
+        </div>
+    </div>
+</div>

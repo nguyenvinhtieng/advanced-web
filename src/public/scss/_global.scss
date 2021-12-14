@@ -1,0 +1,127 @@
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+.container {
+    min-width: 100%;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: $fontSize;
+    background-color: rgb(240, 242, 245);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.form-group {
+    position: relative;
+    width: 100%;
+    margin: 0 0 32px 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    transition: 0.25s ease;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 21px;
+    user-select: none;
+    color: #999;
+    pointer-events: none;
+    font-size: 16px;
+    transition: 0.25s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+    border: 1px solid $purpleColor;
+}
+
+.form-group input[type="text"]:not(:placeholder-shown) + label,
+.form-group input[type="password"]:not(:placeholder-shown) + label,
+.form-group input[type="text"]:focus + label,
+.form-group input[type="password"]:focus + label {
+    top: 0;
+    left: 11px;
+    padding: 0 10px;
+    display: inline-block;
+    background-color: #ffff;
+    color: $purpleColor;
+}
+.avatar-sm {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.avatar-lg {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.wrapper {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button:hover {
+    opacity: 0.8;
+}
+.text-center {
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.error-alert {
+    padding: 8px 16px;
+    color: $invalidColor;
+    width: 100%;
+    background-color: #fabdbe88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.width-full {
+    width: 100% !important;
+}
+.flex-1 {
+    flex: 1;
+}
+@media (max-width: 400px) {
+    body {
+        font-size: 12px;
+    }
+    .wrapper {
+        margin-top: 30px;
+    }
+}

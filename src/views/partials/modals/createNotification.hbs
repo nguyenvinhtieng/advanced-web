@@ -1,0 +1,36 @@
+<form action="/department/createNotify" method="post" id="formCreateNotification">
+    <input type="checkbox" id="modal-create-notification">
+    <label for="modal-create-notification" class="layer-hidden-close-modal"></label>
+    <div class="modal-create-notification">
+        <label for="modal-create-notification" class="modal-close">
+            <ion-icon name="close"></ion-icon>
+        </label>
+        <h2 class="modal-header">
+            Create a new notification
+        </h2>
+        <div class="modal-content">
+            <div class="modal-content-text">
+                <label class="bold" for="">Title</label> <br>
+                <textarea type="text" name="title" id="title"></textarea>
+            </div>
+            <div class="modal-content-text-content">
+                <label class="bold" for="">Content</label> <br>
+                <textarea type="text" placeholder="Type some thing..." name="content" id="content"></textarea>
+            </div>
+            <div class="bold">Category</div>
+            <div class="department-list">
+                {{#each account.category}}
+                <div class="department-item">
+                    <input type="radio" id={{this}} class="checkbox-input" name="category" value={{this}}>
+                    <label class="checkbox-label" for={{this}}></label>
+                    <label for={{this}}>{{this}}</label>
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button class="btn-create">Create</button>
+        </div>
+    </div>
+</form>

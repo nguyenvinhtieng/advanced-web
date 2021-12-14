@@ -1,0 +1,67 @@
+<div class="post">
+    <div class="post-header">
+        <div class="avatar-sm">
+            <img src={{ this.userAvatar }} alt="Khoa Công Nghệ Thông Tin DH TDT">
+        </div>
+        <div class="post-header-infor">
+            <a href="/user/{{ this.id_user}}" class="post-header-name">
+                {{ this.username }}
+            </a>
+            <div class="post-header-time">
+                {{ this.date}}
+            </div>
+        </div>
+        {{#if_eq this.id_user @root.account._id @root.admin}}
+        <div class="post-header-operation">
+            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            <ul class="list-operation">
+                <li class="item-operation delete">
+                    <label data-id="{{ this._id}}" class="labelDeletePost" for="modal-delete-post"> Delete </label>
+                </li>
+                <li class="item-operation edit">
+                    <label data-id="{{ this._id}}" data-content="{{ this.content}}" data-img-link="{{this.imagePath}}"
+                        data-youtube="{{this.urlYoutube}}" class="labelEditPost" for="modal-edit-post"> Edit </label>
+                </li>
+            </ul>
+        </div>
+        {{/if_eq}}
+    </div>
+    <div class="post-content">
+        <div class="post-text">
+            {{ this.content}}
+        </div>
+        {{#if this.imagePath}}
+        <div class="post-img">
+            <img src={{ this.imagePath }} alt="">
+        </div>
+        {{/if}}
+        {{#if this.urlYoutube}}
+        <div class="post-video">
+            <iframe width="560" height="315" src={{this.urlYoutube}} title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        {{/if}}
+    </div>
+    <div class="post-interact">
+        <div class="comment-count">
+            <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+            <span class="click-to-see-comment"> <span
+                    class="comment-length-{{this._id}}">{{this.comments.length}}</span> Comment</span>
+        </div>
+        {{!-- <form action="/API/comment/{{this._id}}/create" method="post"> --}}
+            <div class="add-comment">
+                <input type="text" placeholder="Add a comment..." name="content" class="input-comment-{{this._id}}">
+                <button data-id="{{this._id}}" class="btnAddComment">
+                    <ion-icon data-id="{{this._id}}" name="paper-plane"></ion-icon>
+                </button>
+            </div>
+            {{!--
+        </form> --}}
+    </div>
+    <ul class="post-comment" data-id="{{this._id}}" id="{{this._id}}">
+        {{#each this.comments}}
+        {{> post/comment}}
+        {{/each}}
+    </ul>
+</div>

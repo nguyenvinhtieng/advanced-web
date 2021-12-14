@@ -1,0 +1,53 @@
+<form action="" id="formUpdatePost">
+    <input type="checkbox" id="modal-edit-post" hidden>
+    <label for="modal-edit-post" class="layer-hidden-close-modal"></label>
+    <div class="modal-edit-post">
+        <label for="modal-edit-post" class="modal-close">
+            <ion-icon name="close"></ion-icon>
+        </label>
+        <h2 class="modal-header">
+            Edit post
+        </h2>
+        <div class="modal-content">
+            <div class="modal-content-header">
+                <div class="avatar-sm">
+                    <img src={{account.avatar}} alt="">
+                </div>
+                <div class="info">
+                    <b class="name">{{account.usename}}</b>
+                    <div class="public">
+                        <ion-icon name="earth"></ion-icon> Public
+                    </div>
+                </div>
+            </div>
+            <div class="modal-content-content">
+                <input type="text" id="postIdEdit" hidden>
+                <input type="checkbox" hidden id="">
+                <textarea name="content" id="postContentEdit" placeholder="What do you think.."></textarea>
+                <input type="file" name="image" id="post-img-edit-post" hidden>
+
+                <input type="text" name="deleteimage" id="edit-post-modal-delete-img" hidden>
+
+                <input type="text" name="urlYoutube" id="linkYoutubeEdit" class="youtube-link-edit-post"
+                    placeholder="Youtube link">
+            </div>
+            <div class="modal-image-preview preview-image-edit">
+                <img src="" alt="" class="postImageEdit">
+                <div class="delete-img-edit">
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="modal-content-attach">
+                <label for="post-img-edit-post" class="modal-content-attach-photo">
+                    <ion-icon name="images"></ion-icon>
+                </label>
+                <label for="open-input-youtube-link" class="modal-content-attach-youtube">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-post">Update</button>
+        </div>
+    </div>
+</form>

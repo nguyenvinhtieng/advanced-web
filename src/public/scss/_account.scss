@@ -1,0 +1,75 @@
+.account {
+    width: 1000px;
+    border: 1px solid $grayColor;
+    padding: 16px;
+    border-radius: 4px;
+    background: #fff;
+    &-header {
+        display: flex;
+        gap: 16px;
+    }
+    &-add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $grayColor;
+        width: fit-content;
+        padding: 6px 16px;
+        border-radius: 4px;
+        gap: 6px;
+        cursor: pointer;
+        transition: all 0.25s linear;
+        &:hover {
+            background-color: $primaryColor;
+            color: $whiteColor;
+        }
+    }
+    &-content {
+        width: 100%;
+        margin-top: 16px;
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+            & td,
+            & th {
+                border-bottom: 1px solid $grayColor;
+                padding: 8px 0;
+                color: $darkestGrayColor;
+                text-align: center;
+                & .departments {
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    align-items: center;
+                    & li {
+                        width: fit-content;
+                        margin-bottom: 6px;
+                        padding: 0px 16px;
+                        border-radius: 16px;
+                        background-color: $secondaryColor;
+                        color: $whiteColor;
+                        font-size: 12px;
+                    }
+                }
+            }
+            & .department-column {
+                max-width: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                & .departments {
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .account {
+        width: 96%;
+    }
+}

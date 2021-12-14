@@ -1,0 +1,42 @@
+{{> header/department}}
+<div id="home-page"></div>
+<div id="socket-page"></div>
+<div id="role-user"></div>
+<div class="wrapper">
+    {{!-- <div class="home-menu-tab tablet">
+        <ul class="tab-list">
+            <li class="tab-item active">News Feed</li>
+            <li class="tab-item">Notification</li>
+        </ul>
+    </div> --}}
+    <div class="home">
+        <div class="left-block home-item active flex-1">
+            {{> post/createPost}}
+            <div id="posts">
+                {{!-- {{#each first_10_posts}}
+                {{> post/post}}
+                {{/each}} --}}
+            </div>
+            <div class="read-all-post"> You are read all posts</div>
+        </div>
+        {{!-- <div class="right-block home-item">
+            <div class="home-notifications">
+                <div class="home-notifications-header">
+                    <span>
+                        New Notifications
+                    </span>
+                    <a href="#!">See all</a>
+                </div>
+                <ul class="home-notifications-list">
+                    {{#each first_10_notifications}}
+                    {{> notification}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div> --}}
+    </div>
+</div>
+</div>
+{{> modals/deleteComment}}
+{{> modals/deletePost}}
+{{> modals/updatePost}}

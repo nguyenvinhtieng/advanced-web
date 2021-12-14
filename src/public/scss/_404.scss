@@ -1,0 +1,28 @@
+.page-404 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        & h1 {
+            font-size: 60px;
+        }
+        & a {
+            padding: 2px 8px;
+            background: $primaryColor;
+            color: $whiteColor;
+            margin: 0 5px;
+            border-radius: 15px;
+            border: 1px solid $primaryColor;
+            transition: all 0.2s linear;
+            &:hover {
+                background: $whiteColor;
+                color: $primaryColor;
+            }
+        }
+    }
+}

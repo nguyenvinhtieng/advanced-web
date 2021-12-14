@@ -1,0 +1,56 @@
+.profile {
+    width: 1000px;
+    &-header {
+        border-bottom: 2px solid $grayColor;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        background: #fff;
+        border-radius: 4px;
+    }
+    &-data {
+        &-email {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &-edit {
+            border: 1px solid $grayColor;
+            width: fit-content;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.25s linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            &:hover {
+                background-color: $darkestGrayColor;
+                color: $whiteColor;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .profile {
+        width: 95%;
+    }
+}
+@media (max-width: 600px) {
+    .profile {
+        &-header {
+            flex-direction: column;
+        }
+        &-data {
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}

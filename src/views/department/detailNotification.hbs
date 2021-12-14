@@ -1,0 +1,28 @@
+{{> header/department}}
+{{> modals/updateNotify}}
+{{> modals/deleteNotify}}
+<div id="notifications-page"></div>
+<div id="socket-page"></div>
+<div id="role-user"></div>
+
+<div class="wrapper">
+    <div class="notification">
+        <div class="notification-operation">
+            <label for="modal-delete-notification" class="notification-delete notification-item">Delete<ion-icon
+                    name="trash"></ion-icon>
+            </label>
+            <label for="modal-update-notification" class="notification-edit notification-item">Edit<ion-icon
+                    name="create"></ion-icon>
+            </label>
+        </div>
+        <h2 class="notification-title text-center">
+            {{notification.title}}
+        </h2>
+        <div class="notification-data">
+            {{notification.date}}
+        </div>
+        <div class="notification-content">
+            {{notification.content}}
+        </div>
+    </div>
+</div>

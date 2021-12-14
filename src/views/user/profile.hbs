@@ -1,0 +1,51 @@
+{{> modals/updateInfor}}
+{{#if_eq_prf account.role 'admin' }}
+<div id="admin"></div>
+{{> header/admin}}
+{{/if_eq_prf}}
+{{#if_eq_prf account.role 'department' }}
+{{> header/department}}
+{{/if_eq_prf}}
+{{#if_eq_prf account.role 'student' }}
+{{> header/user}}
+{{/if_eq_prf}}
+<div id="profile-page"></div>
+<div id="socket-page"></div>
+<div id="role-user">student</div>
+<div class="wrapper">
+    <div class="profile">
+        <div class="profile-header">
+            <div class="avatar-lg">
+                <img src="{{user.avatar}}" alt="">
+            </div>
+            <div class="profile-data">
+                <h1 class="profile-data-name">
+                    {{user.username}}
+                </h1>
+                <a href="mailto: {{user.email}}" class="profile-data-email">
+                    Email: {{user.email}}
+                </a>
+                <p class="profile-data-class">
+                    Class: {{user.class}}
+                </p>
+                <p class="profile-data-faculty">
+                    Faculty: {{user.faculty}}
+                </p>
+                {{#if_eq user._id account._id admin}}
+                <label for="modal-update-infor" class="profile-data-edit btn-edit-profile">
+                    Edit profile <ion-icon name="create"></ion-icon>
+                </label>
+                {{/if_eq}}
+            </div>
+        </div>
+        <div class="profile-timeline" id="posts">
+            {{!-- {{#each user_first_10_posts}}
+            {{> post/post}}
+            {{/each}} --}}
+        </div>
+        <div class="read-all-post"> You are read all posts</div>
+    </div>
+</div>
+{{> modals/deleteComment}}
+{{> modals/deletePost}}
+{{> modals/updatePost}}

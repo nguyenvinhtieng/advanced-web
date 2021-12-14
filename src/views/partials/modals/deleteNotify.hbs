@@ -1,0 +1,20 @@
+<form action="/department/notify/{{notification._id}}?_method=DELETE" method="post">
+    <input type="checkbox" id="modal-delete-notification" hidden>
+    <label for="modal-delete-notification" class="layer-hidden-close-modal"></label>
+    <div class="modal-delete-notification">
+        <label for="modal-delete-notification" class="modal-close">
+            <ion-icon name="close"></ion-icon>
+        </label>
+        <h2 class="modal-header">
+            Delete
+        </h2>
+        <p class="modal-content">
+            Are you sure you want to delete?
+        </p>
+        <hr>
+        <div class="modal-footer">
+            <button type="submit" class="btn-delete">Delete</button>
+            <label for="modal-delete-notification" class="btn-cancel">Cancel</label>
+        </div>
+    </div>
+</form>

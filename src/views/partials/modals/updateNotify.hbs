@@ -1,0 +1,36 @@
+<form action="/department/notify/{{notification._id}}" method="post">
+    <input type="checkbox" id="modal-update-notification" hidden>
+    <label for="modal-update-notification" class="layer-hidden-close-modal"></label>
+    <div class="modal-update-notification">
+        <label for="modal-update-notification" class="modal-close">
+            <ion-icon name="close"></ion-icon>
+        </label>
+        <h2 class="modal-header">
+            Edit notification
+        </h2>
+        <div class="modal-content">
+            <div class="modal-content-text">
+                <label class="bold" for="">Title</label> <br>
+                <textarea type="text" placeholder="Title..." required name="title">{{notification.title}}</textarea>
+            </div>
+            <div class="modal-content-text-content">
+                <label class="bold" for="">Content</label> <br>
+                <textarea type="text" name="content" placeholder="Type some thing..."
+                    required>{{notification.content}}</textarea>
+            </div>
+            <div class="bold">Category</div>
+            <div class="department-list">
+                {{{handleRenderEditNoti account notification }}}
+                {{!-- <div class="department-item">
+                    <input type="checkbox" id="{{}}" class="checkbox-input" name="department[]">
+                    <label class="checkbox-label" for="{{}}"></label>
+                    <label for="1">TDT CLC</label>
+                </div> --}}
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-create">Update</button>
+        </div>
+    </div>
+</form>

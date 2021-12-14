@@ -1,0 +1,49 @@
+<form action="/API/post/create" method="POST" enctype="multipart/form-data" id="formCreatePost">
+    <input type="checkbox" id="modal-create-newpost" hidden>
+    <label for="modal-create-newpost" class="layer-hidden-close-modal"></label>
+    <div class="modal-create-newpost">
+        <label for="modal-create-newpost" class="modal-close">
+            <ion-icon name="close"></ion-icon>
+        </label>
+        <h2 class="modal-header">
+            Create new post
+        </h2>
+        <div class="modal-content">
+            <div class="modal-content-header">
+                <div class="avatar-sm">
+                    <img src={{account.avatar}} alt="">
+                </div>
+                <div class="info">
+                    <b class="name">{{ account.username}}</b>
+                    <div class="public">
+                        <ion-icon name="earth"></ion-icon> Public
+                    </div>
+                </div>
+            </div>
+            <div class="modal-content-content">
+                <input type="checkbox" hidden id="open-input-youtube-link">
+                <textarea name="content" id="contentPost" placeholder="What do you think.."></textarea>
+                <input name="image" type="file" id="post-img" class="post-img-posted" hidden>
+                <input name="urlYoutube" type="text" id="youtubeLinkCreate" class="youtube-link"
+                    placeholder="Youtube link">
+            </div>
+            <div class="modal-image-preview img-prv-create-post">
+                <img src="" alt="" id="img-post-preview">
+                <div class="delete-img">
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="modal-content-attach">
+                <label for="post-img" class="modal-content-attach-photo">
+                    <ion-icon name="images"></ion-icon>
+                </label>
+                <label for="open-input-youtube-link" class="modal-content-attach-youtube">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-post">Post</button>
+        </div>
+    </div>
+</form>

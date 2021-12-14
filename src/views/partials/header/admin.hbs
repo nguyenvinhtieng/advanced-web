@@ -1,0 +1,70 @@
+    {{> modals/changePassword}}
+
+<header class="header">
+    <input type="checkbox" id="toggle-menu" hidden>
+    <label for="toggle-menu" class="layer-hidden-toggle-menu"></label>
+    <div class="header-main">
+        <a class="header-logo" href='/admin/home'>
+            <img src="/images/logo.png" alt="Logo Ton Duc Thang University">
+        </a>
+        <ul class="header-menu">
+            <label for="toggle-menu" class="mobile close">
+                <ion-icon name="close"></ion-icon>
+            </label>
+            <li class="header-menu-item-1 mobile">
+                Hi Admin
+            </li>
+            <li class="header-menu-item">
+                <a class="header-menu-link" href="/admin/home">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <span class="mobile">Home</span>
+                </a>
+            </li>
+            {{!-- <li class="header-menu-item">
+                <a class="header-menu-link" href="/admin/notify">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                   <span class="mobile">Notifications</span>
+                </a>
+            </li>  --}}
+            <li class="header-menu-item">
+                <a class="header-menu-link" href="/admin/departments">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <span class="mobile">Users</span>
+                </a>
+            </li>
+             <li class="header-menu-item mobile">
+                <label for="modal-change-password" class="header-menu-link" href="#">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <span class="mobile"> Change password</span>
+                </label>
+            </li>
+            <li class="header-menu-item logout mobile">
+                <a class="header-menu-link" href="/logout">
+                    <ion-icon name="log-out-outline"></ion-icon>
+                    <span class="mobile">Logout</span>
+                </a>
+            </li>
+        </ul>
+        <ul class='menu-list not-user'>
+            <li class='menu-item my-profile'>
+                <a href='#!' class='menu-link'>
+                    <span class="name">
+                        Hi Admin
+                    </span>
+                </a>
+            </li>
+            <li class='menu-item drop-down'>
+                <ion-icon name="caret-down-outline"></ion-icon>
+                <ul class="menu-dropdown">
+                    <li class="menu-dropdown-item change-password">
+                        <ion-icon name="lock-closed-outline"></ion-icon> Change password
+                    </li>
+                    <a href="/logout"><li class="menu-dropdown-item log-out"><ion-icon name="log-out-outline"></ion-icon>Log out</li></a>
+                </ul>
+            </li>
+        </ul>
+        <label for="toggle-menu" class="toggle-menu mobile">
+            <ion-icon name="menu-outline"></ion-icon>
+        </label>
+    </div>
+</header>

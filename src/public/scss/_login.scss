@@ -1,0 +1,82 @@
+.login {
+    background: rgb(171, 220, 255);
+    background: linear-gradient(
+        85deg,
+        rgba(171, 220, 255, 1) 0%,
+        rgba(3, 150, 255, 1) 100%
+    );
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-form {
+        background-color: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 16px;
+        width: 500px;
+        padding: 24px 50px;
+        @media (max-width: 400px) {
+            & a {
+                font-size: 14px;
+            }
+        }
+        & a {
+            color: inherit;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 16px;
+            background-color: $grayColor;
+            transition: all 0.25s linear;
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+        & form {
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            & img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            & h1 {
+                margin: 0 auto;
+                margin-bottom: 16px;
+            }
+            & ion-icon {
+                position: absolute;
+                top: 50%;
+                right: 8px;
+                font-size: 24px;
+                color: $whiteColor;
+                transform: translateY(-50%);
+                transition: all 0.25s linear;
+            }
+            & button {
+                width: 100%;
+                background-color: $primaryColor;
+                padding: 12px 16px;
+                border: none;
+                outline: none;
+                border-radius: 8px;
+                color: $whiteColor;
+                cursor: pointer;
+                font-size: 20px;
+                &:hover ~ ion-icon {
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 520px) {
+    .login-form {
+        width: 95%;
+    }
+}

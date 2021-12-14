@@ -1,0 +1,27 @@
+{{> header/department}}
+<div id="profile-page"></div>
+{{> modals/updateInfor}}
+<div id="role-user"></div>
+<div class="wrapper">
+    <div class="profile">
+        <div class="profile-header">
+            <div class="avatar-lg">
+                <img src="/images/avatars/avt.jpg" alt="">
+            </div>
+            <div class="profile-data">
+                <h1 class="profile-data-name">
+                    Nguyen Vinh Tieng
+                </h1>
+                <a href="mailto: vinhtieng123@gmail.com" class="profile-data-email">
+                    Email: vinhtieng123@gmail.com
+                </a>
+                <label for="modal-update-infor" class="profile-data-edit btn-edit-profile">
+                    Edit profile <ion-icon name="create"></ion-icon>
+                </label>
+            </div>
+        </div>
+        <div class="profile-timeline">
+            {{> post/post}}
+        </div>
+    </div>
+</div>
