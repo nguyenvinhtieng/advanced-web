@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;700&display=swap");
 .container {
   min-width: 100%;
 }
@@ -10,7 +11,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-size: 16px;
   background-color: #f0f2f5;
 }
@@ -807,7 +808,7 @@ button:hover {
 .post-comment .comment-content {
   background-color: #f0f2f5;
   max-width: 60%;
-  padding: 2px 12px;
+  padding: 4px 12px;
   border-radius: 12px;
 }
 .post-comment .comment-time {
@@ -1035,24 +1036,24 @@ button:hover {
   font-size: 16px;
   border: 1px solid #ebebeb;
   outline: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .modal-create-notification .modal-content-text textarea:focus {
   border: 1px solid #6a5af9;
 }
 .modal-create-notification .modal-content-text textarea::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
   opacity: 1;
   /* Firefox */
 }
 .modal-create-notification .modal-content-text textarea:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .modal-create-notification .modal-content-text textarea::-ms-input-placeholder {
   /* Microsoft Edge */
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .modal-create-notification .modal-content-text textarea::-webkit-scrollbar {
   width: 3px;
@@ -1073,24 +1074,24 @@ button:hover {
   font-size: 17px;
   border: 1px solid #ebebeb;
   outline: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .modal-create-notification .modal-content-text-content textarea:focus {
   border: 1px solid #6a5af9;
 }
 .modal-create-notification .modal-content-text-content textarea::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
   opacity: 1;
   /* Firefox */
 }
 .modal-create-notification .modal-content-text-content textarea:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .modal-create-notification .modal-content-text-content textarea::-ms-input-placeholder {
   /* Microsoft Edge */
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .modal-create-notification .modal-content-text-content textarea::-webkit-scrollbar {
   width: 3px;
@@ -1434,24 +1435,24 @@ button:hover {
   font-size: 16px;
   border: 1px solid #ebebeb;
   outline: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .modal-update-notification .modal-content-text textarea:focus {
   border: 1px solid #6a5af9;
 }
 .modal-update-notification .modal-content-text textarea::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
   opacity: 1;
   /* Firefox */
 }
 .modal-update-notification .modal-content-text textarea:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .modal-update-notification .modal-content-text textarea::-ms-input-placeholder {
   /* Microsoft Edge */
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .modal-update-notification .modal-content-text textarea::-webkit-scrollbar {
   width: 3px;
@@ -1472,24 +1473,24 @@ button:hover {
   font-size: 17px;
   border: 1px solid #ebebeb;
   outline: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .modal-update-notification .modal-content-text-content textarea:focus {
   border: 1px solid #6a5af9;
 }
 .modal-update-notification .modal-content-text-content textarea::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
   opacity: 1;
   /* Firefox */
 }
 .modal-update-notification .modal-content-text-content textarea:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .modal-update-notification .modal-content-text-content textarea::-ms-input-placeholder {
   /* Microsoft Edge */
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .modal-update-notification .modal-content-text-content textarea::-webkit-scrollbar {
   width: 3px;
