@@ -14,7 +14,7 @@ router.get('/login', flash, AccountController.renderLogin)
 router.get('/login-google-failure', AccountController.loginGoogleFailure)
 router.get('/login-google', passport.authenticate('google', { scope: ['profile', 'email'] }))
 router.get('/google/callback', passport.authenticate('google', { failureRedirect: '/login-google-failure' }), AccountController.googleCallBack);
-router.get('/check-login-google', checkMail, AccountController.loginGoogle, AccountController.createAccountStudent)
+router.get('/check-login-google',/* checkMail,*/ AccountController.loginGoogle, AccountController.createAccountStudent)
 router.get('/', AccountController.renderLogin)
 router.post('/loginByAccount', AccountController.loginByAccount)
 router.get('/logout', AccountController.logOut)
