@@ -6,7 +6,7 @@ module.exports = {
     "google": {
         "clientID": "59826905681-qoelvu7i69m06fhbut2g70fkgehoime6.apps.googleusercontent.com",
         "clientSecret": "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",
-        "callbackURL": "https://advanced-web-tdtu-2021-2022.herokuapp.com/google/callback"
+        "callbackURL": "https://school-connect.herokuapp.com/google/callback"
     },
     "cloudinary": {
         "cloud_name": "nguyenvinhtieng",
